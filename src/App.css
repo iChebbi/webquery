@@ -1,0 +1,24 @@
+@import "~antd/dist/antd.css";
+
+.App {
+  text-align: center;
+}
+
+.App-header h1 {
+  color: whitesmoke;
+}
+
+.App-content {
+  min-height: 86vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.search {
+  max-width: 500px;
+  margin-right: 5px;
+}
+
+.results {
+  margin-top: 100px;
+}
