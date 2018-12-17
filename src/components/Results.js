@@ -5,16 +5,6 @@ const { Column } = Table;
 
 export default class Results extends Component {
 
-  api_res = [
-    {
-      "https://publicwww.com/": [
-        "...Sites with the same analytics id: <a href=\"/websites/%22UA-1...",
-        "...s, based on our web analytics, and also get help on finding,...",
-        "...><a href=\"/examples/analytics.html\" style=\"white-space:nowra..."
-      ]
-    },
-  ];
-
   state = {
     searched: false,
     data: [],
@@ -38,7 +28,7 @@ export default class Results extends Component {
     }
   ];
 
-  async componentWillReceiveProps() {
+  componentWillReceiveProps() {
     const res = this.props.state.data;
     this.setState({ searched: true })
     if (res.length > 0) {

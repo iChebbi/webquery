@@ -18,7 +18,7 @@ class App extends Component {
   fetchData = async (key, con) => {
     try {
       this.setState({ fetching: true, key })
-      const data = await (await fetch(`http://212.227.252.224:8081/query?key=${key}&con=${con}`)).json();
+      const data = await (await fetch(`http://localhost:8081/query?key=${key}&con=${con}`)).json();
       this.setState({ fetching: false })
       if (data[0].msg === undefined) {
         this.setState({ data });
